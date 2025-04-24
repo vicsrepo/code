@@ -1,3 +1,5 @@
+# adappt\_interfer\_v1
+
 ```markdown
 # ADAPPT – Digitální agentura
 
@@ -9,25 +11,27 @@ ADAPPT je digitální agentura zaměřená na vývoj webu, branding a marketingo
 ## Struktura projektu
 
 ```
-adappt-vite/
-├── index.html
-├── README.md
-├── tsconfig.json
-├── vite.config.ts
-├── package.json
-├── src/
-│   ├── main.ts
-│   ├── styles/
-│   │   └── style.css
-│   ├── components/
-│   │   ├── Header.ts
-│   │   ├── Hero.ts
-│   │   ├── Services.ts
-│   │   ├── WhyAdappt.ts
-│   │   └── Footer.ts
-│   └── utils/
-│       └── theme.ts
-```
+
+adappt-vite/\
+├── index.html\
+├── README.md\
+├── tsconfig.json\
+├── vite.config.ts\
+├── package.json\
+├── src/\
+│ ├── main.ts\
+│ ├── styles/\
+│ │ └── style.css\
+│ ├── components/\
+│ │ ├── Header.ts\
+│ │ ├── Hero.ts\
+│ │ ├── Services.ts\
+│ │ ├── WhyAdappt.ts\
+│ │ └── Footer.ts\
+│ └── utils/\
+│ └── theme.ts
+
+````
 
 ---
 
@@ -48,9 +52,10 @@ adappt-vite/
         <script type="module" src="/src/main.ts"></script>
     </body>
 </html>
-```
+````
 
-### `package.json`
+#### `package.json`
+
 ```json
 {
     "name": "adappt-vite",
@@ -67,7 +72,8 @@ adappt-vite/
 }
 ```
 
-### `tsconfig.json`
+#### `tsconfig.json`
+
 ```json
 {
     "compilerOptions": {
@@ -87,7 +93,8 @@ adappt-vite/
 }
 ```
 
-### `vite.config.ts`
+#### `vite.config.ts`
+
 ```ts
 import { defineConfig } from 'vite'
 
@@ -98,7 +105,8 @@ export default defineConfig({
 })
 ```
 
-### `src/main.ts`
+#### `src/main.ts`
+
 ```ts
 import './styles/style.css'
 import { renderHeader } from './components/Header'
@@ -125,7 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 ```
 
-### `src/components/Header.ts`
+#### `src/components/Header.ts`
+
 ```ts
 export function renderHeader(): HTMLElement {
     const header = document.createElement('header')
@@ -147,7 +156,8 @@ export function renderHeader(): HTMLElement {
 }
 ```
 
-### `src/components/Hero.ts`
+#### `src/components/Hero.ts`
+
 ```ts
 export function renderHero(): HTMLElement {
     const section = document.createElement('section')
@@ -160,7 +170,8 @@ export function renderHero(): HTMLElement {
 }
 ```
 
-### `src/components/Services.ts`
+#### `src/components/Services.ts`
+
 ```ts
 export function renderServices(): HTMLElement {
     const section = document.createElement('section')
@@ -187,7 +198,8 @@ export function renderServices(): HTMLElement {
 }
 ```
 
-### `src/components/WhyAdappt.ts`
+#### `src/components/WhyAdappt.ts`
+
 ```ts
 export function renderWhyAdappt(): HTMLElement {
     const section = document.createElement('section')
@@ -217,7 +229,8 @@ export function renderWhyAdappt(): HTMLElement {
 }
 ```
 
-### `src/components/Footer.ts`
+#### `src/components/Footer.ts`
+
 ```ts
 export function renderFooter(): HTMLElement {
     const footer = document.createElement('footer')
@@ -230,7 +243,8 @@ export function renderFooter(): HTMLElement {
 }
 ```
 
-### `src/utils/theme.ts`
+#### `src/utils/theme.ts`
+
 ```ts
 export function toggleTheme() {
     const current = document.body.getAttribute('data-theme') || 'dark'
@@ -252,9 +266,9 @@ export function applySavedTheme() {
 }
 ```
 
----
+***
 
-## 💻 Instalace & spuštění
+### 💻 Instalace & spuštění
 
 1. Stáhni nebo naklonuj repozitář.
 2. Spusť následující příkazy v terminálu:
@@ -266,25 +280,27 @@ npm run dev
 
 3. Otevři prohlížeč na adrese: `http://localhost:5173`.
 
----
+***
 
-## 🔧 Připravené funkce
+### 🔧 Připravené funkce
 
-- **Tmavý/světlý režim**: Přepínání mezi režimy s uložením do `localStorage`.
-- **Přepínač jazyka**: CZ/EN (zatím pouze textově).
-- **Responzivní design**: Optimalizováno pro mobilní zařízení.
-- **Modularita**: Snadné přidávání nových komponent.
+* **Tmavý/světlý režim**: Přepínání mezi režimy s uložením do `localStorage`.
+* **Přepínač jazyka**: CZ/EN (zatím pouze textově).
+* **Responzivní design**: Optimalizováno pro mobilní zařízení.
+* **Modularita**: Snadné přidávání nových komponent.
 
----
+***
 
-## 📌 Možnosti rozšíření
+### 📌 Možnosti rozšíření
 
-- Přidání formuláře s validací.
-- Napojení na CMS (např. Sanity, Storyblok).
-- Překlady pomocí i18next.
-- SEO optimalizace.
+* Přidání formuláře s validací.
+* Napojení na CMS (např. Sanity, Storyblok).
+* Překlady pomocí i18next.
+* SEO optimalizace.
 
----
+***
 
 Dej vědět, pokud potřebuješ další úpravy nebo rozšíření! 🚀
+
+```
 ```

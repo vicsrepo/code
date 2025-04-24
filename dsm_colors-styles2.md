@@ -1,1 +1,3 @@
+# dsm\_colors styles2
+
 Modern design with a red color in the navigation panel, ideal for a company specializing in wood processing: web design with an elegant color palette, medium dynamic contrasting elements, scroll-activated animations, smooth transitions, and dynamic layout. Adherence to contrast standards (WCAG), UI/UX design, top-down view, clean and professional aesthetics with a high level of detail.
